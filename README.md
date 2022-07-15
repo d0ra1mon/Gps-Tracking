@@ -7,3 +7,5 @@ Il Gps-tracking e' composto da un'unita' di controllo (Arduino nano), la quale e
 
 <img src="scheme.png">
 Lo schema non e' esattamente questo, ma vi basta leggere il file .ino per capire i corretti collegamenti.
+
+<img src="2.png">
