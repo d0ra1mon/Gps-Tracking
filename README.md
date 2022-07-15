@@ -1,5 +1,5 @@
 # Gps-Tracking
-<img src="https://raw.githubusercontent.com/lk-geimfari/awesomeo/master/artwork/a.w.e.s.o.m.e_o.png">
+<p align="center"><img src="https://raw.githubusercontent.com/lk-geimfari/awesomeo/master/artwork/a.w.e.s.o.m.e_o.png"></p>
 Questo progetto nasce con l'intento di creare un piccolo gps tracking senza affidarsi a servizi di terze parti. In questo repository troverai i seguenti file:
 - Gps_SD.ino, contenente lo script che legge la posizione tramite il module GPS e scrive sul modulo SD.
 - inf.sl, contenente il modello 3d della parte superiore della custodia.
