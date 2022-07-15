@@ -1,6 +1,7 @@
 # Gps-Tracking
-<p align="center"><img src="https://raw.githubusercontent.com/lk-geimfari/awesomeo/master/artwork/a.w.e.s.o.m.e_o.png"></p>
+<p align="center"><img src="2.png"></p>
 Questo progetto nasce con l'intento di creare un piccolo gps tracking senza affidarsi a servizi di terze parti. In questo repository troverai i seguenti file:
+- [html2canvas](https://github.com/niklasvh/html2canvas) - Turns DOM into Canvas.
 - [Gps_SD.ino], contenente lo script che legge la posizione tramite il module GPS e scrive sul modulo SD.
 - [inf.sl], contenente il modello 3d della parte superiore della custodia.
 - [sup.sl], contenente il modello 3d della parte inferiore della custodia.
