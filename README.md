@@ -8,3 +8,9 @@ Il Gps-tracking e' composto da un'unita' di controllo (Arduino nano), la quale e
 - [inf.sl], contenente il modello 3d della parte superiore della custodia.
 - [sup.sl], contenente il modello 3d della parte inferiore della custodia.
 Se hai intenzione di stampare la custodia in  3d, sappi che ho utilizzato viti da 3mm per chiudere il sistema.
+- [html2canvas](https://github.com/niklasvh/html2canvas) - Turns DOM into Canvas.
+- [jsPDF](https://github.com/MrRio/jsPDF) - To generate PDF from images.
+- [cypress](https://github.com/cypress-io/cypress) - Testing Library
+- [serve](https://github.com/zeit/serve) - Start local server
+
+---
