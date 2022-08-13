@@ -31,16 +31,17 @@ void loop() {
   String datastring = "";
   date_str = find_date(gps,prev_date);
   prev_date = date_str;
-  datastring+=date_str; datastring+=",";
-  datastring+=String(flon,6); datastring+=",";
-  datastring+=String(flat,6); datastring+=",";
-  datastring+=String(gps.f_altitude(),6); datastring+=",";
-  datastring+=String(gps.f_course(),2); datastring+=",";
-  datastring+=String(gps.f_speed_kmph(),5);
+  datastring+= date_str; datastring+=",";
+  datastring+= String(flon,6); datastring+=",";
+  datastring+= String(flat,6); datastring+=",";
+  datastring+= String(gps.f_altitude(),6); datastring+=",";
+  datastring+= String(gps.f_course(),2); datastring+=",";
+  datastring+= String(gps.f_speed_kmph(),5);
 
-  if (date_str=="NaN"){
-  } else {
-    if (valid_date==false){
+  if (date_str == "NaN"){
+  } 
+  else {
+    if (valid_date == false){
       valid_date = true;
       filename = filenamer(gps);
       Serial.println(filename);
@@ -49,10 +50,12 @@ void loop() {
         dataFile.println("Date [mm/dd/yyyy HH:MM:SS],Longitude [deg],"
         "Latitude [deg],Altitude [m],Heading [deg],Speed [kmph]"); // alter based on data
         dataFile.close();
-      } else {
+      } 
+      else {
         Serial.println("Issue with saving header");
       }
-    } else {
+    } 
+    else {
       // open file, write to it, then close it again
       File dataFile = SD.open(filename, FILE_WRITE);
       if (dataFile) {
@@ -68,8 +71,7 @@ void loop() {
 
 static void smartdelay(unsigned long ms) {
   unsigned long start = millis();
-  do
-  {
+  do{
     while (ss.available())
       gps.encode(ss.read());
   } while (millis() - start < ms);
@@ -83,18 +85,16 @@ String find_date(TinyGPS &gps,String prev_date) {
   gps.crack_datetime(&year, &month, &day, &hour, &minute, &second, &hundredths, &age);
   if (age == TinyGPS::GPS_INVALID_AGE)
     date_str = "NaN";
-  else
-  {
+  else{
     int byte_size = 19;
     char chars[byte_size];
     sprintf(chars, "%02d/%02d/%02d %02d:%02d:%02d",
           month,day, year, hour, minute, second);
-    for (int ii=0;ii<=byte_size-1;ii++){
-      date_str+=String(chars[ii]);
+    for (int i = 0; i <= byte_size-1; i++){
+      date_str+= String(chars[ii]);
     }
-   
   }
-  if (date_str==prev_date){
+  if (date_str == prev_date){
     return "NaN";
   }
   return date_str;
@@ -110,8 +110,8 @@ String filenamer(TinyGPS &gps) {
   char chars[byte_size];
   sprintf(chars, "%02d%02d%02d%02d",
         day, hour, minute, second);
-  for (int ii=0;ii<=byte_size-1;ii++){
-    filename+=String(chars[ii]);
+  for (int i = 0; i <= byte_size-1; i++){
+    filename+=String(chars[i]);
   }
   return filename+".csv";
 }
