@@ -1,11 +1,11 @@
 # Gps-Tracking
-Questo progetto nasce con l'intento di creare un piccolo gps tracking senza affidarsi a servizi di terze parti.
+This project was born with the intention of creating a small gps tracking without relying on third-party services.
 <p align="center"><img src="4.jpeg"></p> 
 
-# Come e' fatto
-Il Gps-tracking e' composto da un'unita' di controllo (Arduino nano), la quale e' collegata a un modulo SD che memorizza la posizione rilevata (ogni 3 secondi) tramite il modulo GPS, il tutto alimentato da una batteria PiSugar con autonomia tra le 7/8 ore.
+# What it looks like
+Gps-tracking is composed of a control unit (Arduino nano), which is connected to an SD module that stores the position detected (every 3 seconds) by the GPS module, all powered by a PiSugar battery with an autonomy of 7 to 8 hours.
 
 <img src="scheme.png">
-Lo schema non e' esattamente questo, ma vi basta leggere il file .ino per capire i corretti collegamenti.
+The diagram is not exactly this, but you only need to read the .ino file to understand the correct connections.
 
 <img src="2.png">
