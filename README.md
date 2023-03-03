@@ -15,7 +15,11 @@ In order to be able to view the 2d map of the networks found, you should use thi
 ## Assembly
 The diagram is not exactly this, but you only need to read the .ino file to understand the correct connections.
 <img src="image/scheme.png">
-<img src="image/2.png">
+
+## 3D Case
+Finally, in the 3D folder you will find the two files for 3d printing of the case.
+<img src="image/sup.png">
+<img src="image/inf.png">
 
 ## Disclaimer
 I recommend using this device for testing, learning and fun :D
